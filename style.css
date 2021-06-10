@@ -1,0 +1,1119 @@
+@font-face {
+  font-family: "iransans";
+  src: url("fonts/iransans.ttf");
+}
+@font-face {
+  font-family: "iransans_light";
+  src: url("fonts/iransans_light.ttf");
+}
+@font-face {
+  font-family: "iransans_medium";
+  src: url("fonts/iransans_medium.ttf");
+}
+@font-face {
+  font-family: "b_farnaz";
+  src: url("fonts/b_farnaz.ttf");
+}
+/*-----css reset-----*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  direction: rtl;
+  font-family: iransans, sans-serif;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0; /* 1 */
+  padding: 0;
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h4 {
+  font-weight: normal;
+}
+
+p {
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  color: #222;
+}
+/*-----css reset-----*/
+.clear-fix {
+  clear: both;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.masthead {
+  width: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 100;
+}
+.masthead .logo {
+  width: 17%;
+  float: right;
+}
+.masthead .landing-menu {
+  width: 60%;
+  float: right;
+  padding: 0 10px;
+}
+.masthead .landing-menu nav ul li {
+  float: right;
+  text-align: center;
+}
+.masthead .landing-menu nav ul li a {
+  display: block;
+  padding: 0 15px;
+  line-height: 60px;
+  border-bottom: 2px solid white;
+}
+.masthead .landing-menu nav ul li a:hover {
+  border-bottom: 2px solid #3498db;
+  color: #3498db;
+}
+.masthead .landing-cta {
+  width: 15%;
+  float: left;
+  padding: 0 25px;
+  text-align: center;
+}
+.masthead .landing-cta a {
+  display: block;
+  padding: 10px;
+  border: 2px solid #3498db;
+  color: #3498db;
+  font-family: iransans_medium, sans-serif;
+  border-radius: 30px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.masthead .landing-cta a:hover {
+  background: #3498db;
+  color: white;
+}
+
+header .landing-cover {
+  background-image: url("images/cover-main.jpg");
+  height: 600px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.landing-cover .cover-content {
+  top: 35%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding-right: 400px;
+}
+.cover-content h3 {
+  font-size: 20px;
+  font-family: iransans_light, sans-serif;
+}
+.cover-content h2 {
+  font-size: 65px;
+  margin: 0 auto 20px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: b_farnaz, sans-serif;
+}
+
+.cover-content .twice ul {
+  display: table;
+  margin: 0 auto;
+}
+.twice ul li {
+  float: right;
+  margin: 0 5px;
+}
+
+.twice ul li a {
+  background: #ffffff;
+  display: inline-block;
+  width: 200px;
+  line-height: 25px;
+  padding: 15px 40px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in;
+  color: white;
+}
+.twice ul li:nth-child(1) a {
+  border-radius: 3px 30px 30px 30px;
+  background: #2ecc71;
+}
+.twice ul li:nth-child(2) a {
+  border-radius: 30px 3px 30px 30px;
+  background: #e74c3c;
+}
+.twice ul li a:hover {
+  border-radius: 3px;
+}
+.twice ul li a i {
+  float: right;
+  font-size: 25px;
+}
+.twice ul li a h3 {
+  font-size: 20px;
+  float: right;
+  padding-right: 10px;
+}
+#landing-views {
+  width: 100%;
+  float: right;
+  padding: 60px 0;
+  background: #ecf0f1;
+}
+#landing-views .views-content {
+  width: 50%;
+  float: right;
+  padding-left: 60px;
+}
+.views-content h3 {
+  font-family: iransans_medium, sans-serif;
+  font-size: 45px;
+  color: #222222;
+  margin: 20px 0;
+}
+.views-content p {
+  text-align: justify;
+  font-family: iransans_light, sans-serif;
+  color: #7f8c8d;
+  line-height: 30px;
+}
+#landing-views .views-video {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+#landing-attributes {
+  width: 100%;
+  float: right;
+  padding: 50px 0;
+  background: #fcfcfc;
+}
+#landing-attributes .title {
+  width: 100%;
+  text-align: center;
+}
+#landing-attributes .title h3 {
+  font-family: iransans_medium, sans-serif;
+  font-size: 45px;
+  color: #222222;
+  margin: 20px 0 10px;
+}
+#landing-attributes .title p {
+  font-family: iransans_light, sans-serif;
+  color: #7f8c8d;
+  line-height: 30px;
+}
+#landing-attributes .attributes {
+  margin: 40px 0;
+}
+#landing-attributes .attributes ul li {
+  float: right;
+  width: 32%;
+  margin: 8px;
+  padding: 25px;
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+#landing-attributes .attributes ul li:hover {
+  background: #3498db;
+  color: white;
+  transform: scale(1.05);
+}
+#landing-attributes .attributes ul li:hover p {
+  color: white;
+}
+#landing-attributes .attributes ul li:hover i {
+  color: white;
+}
+#landing-attributes .attributes ul li h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  line-height: 40px;
+  font-family: iransans_medium, sans-serif;
+  transition: none;
+}
+
+#landing-attributes .attributes ul li h3 i {
+  position: absolute;
+  right: 15px;
+  font-size: 40px;
+  color: #3498db;
+}
+#landing-attributes .attributes ul li p {
+  text-align: justify;
+  font-size: 15px;
+  font-family: iransans_light, sans-serif;
+  color: #7f8c8d;
+}
+#landing-price {
+  width: 100%;
+  float: right;
+}
+#landing-price .title {
+  width: 100%;
+  text-align: center;
+}
+#landing-price .title h3 {
+  font-family: iransans_medium, sans-serif;
+  font-size: 45px;
+  color: #222222;
+  margin: 20px 0 10px;
+}
+#landing-price .title p {
+  font-family: iransans_light, sans-serif;
+  color: #7f8c8d;
+  line-height: 30px;
+}
+#landing-price .price-table {
+  margin: 40px 0;
+}
+#landing-price .price-table > ul > li {
+  float: right;
+  width: 24%;
+  margin: 6px;
+  padding: 20px;
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+#landing-price .price-table > ul > li h3 {
+  font-size: 20px;
+}
+#landing-price .price-table > ul > li h2 {
+  font-size: 30px;
+  margin: 40px 0 25px;
+  text-align: center;
+}
+#landing-price .price-table > ul > li h4 {
+  font-size: 16px;
+}
+#landing-price .price-table > ul > li p {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 10px;
+  color: #7f8c8d;
+}
+#landing-price .price-table > ul > li > ul > li {
+  width: 100%;
+  position: relative;
+}
+#landing-price .price-table > ul > li > ul > li > h3 {
+  font-size: 20px;
+  padding: 10px 30px 10px 0;
+  margin: 10px 0;
+  font-family: iransans, sans-serif;
+  transition: none;
+}
+#landing-price .price-table > ul > li > ul > li > h3 > i {
+  position: absolute;
+  font-size: 20px;
+  color: #3498db;
+  right: 0;
+}
+#landing-price .price-table > ul li a {
+  display: block;
+  text-align: center;
+  margin: 30px 0 0;
+  padding: 15px;
+  font-size: 20px;
+  font-family: iransans_medium, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: #3498db;
+}
+#landing-price .price-table > ul li a:hover {
+  transform: scale(1.02);
+}
+#landing-price .price-table > ul > li:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-30px);
+}
+#landing-price .price-table > ul li:hover i {
+  color: white;
+}
+#landing-price .price-table > ul li:hover p {
+  color: white;
+}
+#landing-price .price-table > ul > li:hover > h3 {
+  font-size: 15px;
+  transition: font-size 0.3s ease;
+}
+#landing-price .price-table > ul li:hover h2 {
+  font-size: 40px;
+  transform: translateY(-10px);
+  transition: font-size 0.3s ease;
+}
+#landing-price .price-table > ul li:hover a {
+  background: white;
+  color: #3498db;
+}
+#landing-team {
+  width: 100%;
+  float: right;
+  background: #fcfcfc;
+  margin: 40px 0;
+  padding: 40px 0;
+}
+#landing-team .title {
+  width: 100%;
+  text-align: center;
+}
+#landing-team .title h3 {
+  font-family: iransans_medium, sans-serif;
+  font-size: 45px;
+  color: #222222;
+  margin: 20px 0 50px;
+}
+#landing-team .teams {
+  width: 100%;
+  margin: 0 auto;
+}
+#landing-team .teams figure {
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  margin: 6px;
+  float: right;
+  border-radius: 3px;
+}
+#landing-team .teams figure img,
+figcaption,
+h3,
+p {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+#landing-team .teams figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+#landing-team .teams figcaption h3 {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  color: white;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+#landing-team .teams figcaption p {
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  color: white;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+#landing-team .teams figure:hover img {
+  transform: rotate(14deg) scale(1.2);
+}
+#landing-team .teams figure:hover h3 {
+  transform: translateY(40px);
+  font-size: 25px;
+}
+#landing-team .teams figure:hover p {
+  transform: translateY(40px);
+}
+#landing-team .teams figure:hover figcaption {
+  background: rgba(0, 0, 0, 0.5);
+}
+#landing-news {
+  width: 100%;
+  float: right;
+  padding: 50px 0;
+  margin: 50px 0;
+}
+#landing-news .title {
+  width: 100%;
+  text-align: center;
+}
+#landing-news .title p {
+  font-family: iransans_light, sans-serif;
+  font-size: 15px;
+  color: #7f8c8d;
+}
+#landing-news .title h3 {
+  font-family: iransans_medium, sans-serif;
+  font-size: 40px;
+  color: #222222;
+  margin: 20px;
+}
+#landing-news form {
+  width: 50%;
+  display: block;
+  margin: 60px auto;
+}
+#landing-news form input {
+  padding: 20px;
+  margin: 0 5px;
+  font-size: 18px;
+  font-family: iransans, sans-serif;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+}
+#landing-news form input[type="email"] {
+  width: 60%;
+  float: left;
+  direction: ltr;
+}
+#landing-news form input[type="submit"] {
+  width: 37%;
+  float: right;
+  background: #3498db;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+#landing-blog {
+  width: 100%;
+  float: right;
+  padding: 50px 0;
+}
+#landing-blog .title {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+#landing-blog .title h3 {
+  width: 50%;
+  float: right;
+  font-family: iransans_medium, sans-serif;
+  color: #222222;
+  font-size: 40px;
+  text-align: center;
+}
+#landing-blog .title p {
+  width: 50%;
+  float: right;
+  font-family: iransans_light, sans-serif;
+  color: #7f8c8d;
+  text-align: justify;
+  font-size: 15px;
+}
+#landing-blog .content-blog {
+  width: 100%;
+  margin: 0 auto;
+}
+#landing-blog .content-blog .post {
+  width: 49%;
+  float: right;
+  margin: 6px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+#landing-blog .content-blog .post .post-image {
+  float: right;
+  width: 45%;
+  height: 200px;
+}
+#landing-blog .content-blog .post .post-image img {
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+#landing-blog .content-blog .post .post-content {
+  width: 55%;
+  float: left;
+  padding: 30px 10px;
+}
+#landing-blog .content-blog .post .post-content h3 {
+  font-family: iransans, sans-serif;
+  font-size: 20px;
+  text-align: right;
+  margin: 10px 0;
+  color: #222222;
+}
+#landing-blog .content-blog .post .post-content p {
+  font-family: iransans_light, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  padding: 0 10px;
+  color: #7f8c8d;
+}
+#landing-blog .content-blog .post:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+#landing-feedback {
+  width: 100%;
+  float: right;
+  background: #ecf0f1;
+  margin: 50px 0;
+  padding: 60px 0;
+}
+#landing-feedback .title {
+  width: 100%;
+  float: right;
+  text-align: center;
+}
+#landing-feedback .title p {
+  font-family: iransans_light, sans-serif;
+  font-size: 15px;
+  color: #7f8c8d;
+}
+#landing-feedback .title h3 {
+  font-family: iransans_medium, sans-serif;
+  font-size: 40px;
+  color: #222222;
+  margin: 20px 0 50px;
+}
+#landing-feedback .content-feedback {
+  width: 100%;
+  float: right;
+}
+#landing-feedback .content-feedback .feed-card {
+  width: 29%;
+  float: right;
+  margin: 26px;
+}
+.content-feedback .feed-card .feed-text {
+  background: white;
+  text-align: justify;
+  padding: 50px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.content-feedback .feed-card .feed-text p {
+  font-family: iransans_light, sans-serif;
+  font-size: 15px;
+  color: #7f8c8d;
+  line-height: 30px;
+}
+.content-feedback .feed-card .feed-user {
+  width: 100%;
+  float: right;
+  margin: 20px;
+}
+.content-feedback .feed-card .feed-user .user-pic {
+  width: 25%;
+  float: right;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content-feedback .feed-card .feed-user .user-pic img {
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+.content-feedback .feed-card .feed-user .user-name {
+  width: 70%;
+  float: right;
+  margin-right: 15px;
+  padding: 20px 0px;
+}
+.content-feedback .feed-card .feed-user .user-name h3 {
+  font-family: iransans, sans-serif;
+  font-size: 25px;
+  color: #222222;
+}
+.content-feedback .feed-card .feed-user .user-name p {
+  font-family: iransans_light, sans-serif;
+  font-size: 15px;
+  color: #7f8c8d;
+}
+.content-feedback .feed-card:hover .feed-text {
+  transform: scale(1.1);
+}
+.content-feedback .feed-card:hover .user-pic{
+  border: 2px solid #3498db;
+}
+#landing-contact {
+  width: 100%;
+  margin: 20px auto;
+  float: right;
+}
+#landing-contact .contact-form{
+  width: 35%;
+  float: right;
+}
+#landing-contact .contact-map{
+  width: 62%;
+  float: right;
+  margin-right: 36px;
+}
+#landing-contact .contact-form h3{
+  font-family: iransans_medium,sans-serif;
+  font-size: 25px;
+  color: #222;
+}
+#landing-contact .contact-form p{
+  font-family: iransans_light,sans-serif;
+  font-size: 15px;
+  color: #7f8c8d;
+  margin: 20px 0;
+  text-align: justify;
+}
+#landing-contact .contact-form form{
+  width: 100%;
+  float: right;
+}
+#landing-contact .contact-form form input{
+  width: 100%;
+  float: right;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #ecf0f1;
+  border-radius: 5px;
+  font-family: iransans_light,sans-serif;
+  font-size: 16px;
+  transition: all .2s ease-in-out;
+}
+#landing-contact .contact-form form textarea{
+  width: 100%;
+  resize: none;
+  padding:10px;
+  border-radius: 5px;
+  border: 2px solid #ecf0f1;
+  margin: 5px 0;
+  font-family: iransans_light,sans-serif;
+  font-size: 16px;
+  height: 150px;
+  transition: all .2s ease-in-out;
+}
+#landing-contact .contact-form form input[type=submit]{
+  border-color: #3498db;
+  background: white;
+  color: #3498db;
+}
+#landing-contact .contact-form form input:focus,#landing-contact 
+.contact-form form textarea:focus{
+  border-color: #3498db;
+}
+#landing-contact .contact-form form input[type=submit]:hover{
+  background:#3498db;
+  color:white;
+}
+footer{
+  background: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+}
+footer .social{
+  display: table;
+  margin: 0 auto 10px;
+}
+footer .social ul li{
+  float: right;
+}
+footer .social ul li a{
+  display: block;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  text-align: center;
+  border-radius: 3px;
+  color: #7f8c8d;
+}
+footer .social ul li a i{
+  position: absolute;
+  top: 35%;
+  right: 0;
+  left: 0;
+}
+
+footer .social ul li:nth-child(1):hover a{
+  background: #e1306c;
+  color: white;
+}
+footer .social ul li:nth-child(2):hover a{
+  background: #0088cc;
+  color: white;
+}
+footer .social ul li:nth-child(3):hover a{
+  background: #25d366;
+  color: white;
+}
+footer .copyright p{
+  color: #7f8c8d;
+  font-family: iransans_light,sans-serif;
+  font-size: 13px;
+}
+footer .copyright p a{
+  color: #3498db;
+}
+.top{
+  position: relative;
+}
+.top .tooltip{
+  width: 100px;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: -25px;
+  background: #141414;
+  margin: 0 0 10px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 15px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  z-index: 1000;
+  border-radius: 50px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+.top:hover .tooltip{
+  opacity: 1;
+}
+.top .tooltip:before{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  border: 5px solid #141414;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
